@@ -106,18 +106,10 @@ section {
 }
 
 .about-background-img {
-    background: radial-gradient(circle, transparent 40%, var(--color-v) 75%),
-        linear-gradient(to right, var(--color), var(--color)), var(--image);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    background-blend-mode: var(--blend-top, normal),
-        var(--blend-bottom, saturation), normal;
-
-    --image: url("../images/max-duzij-qAjJk-un3BI-unsplash.jpg");
-
-    --color-v: black;
-    --color: rgba(255, 255, 255, 0);
+    background-image: url("../images/max-duzij-qAjJk-un3BI-unsplash.jpg");
     opacity: 0.5;
     height: 100%;
 }
@@ -187,7 +179,7 @@ section {
     position: relative;
 }
 
-#projects h1{
+#projects h1 {
     margin-top: 2.5em;
 }
 
@@ -235,11 +227,11 @@ footer a {
         font-size: .9rem;
     }
 
-    section{
+    section {
         min-height: 575px;
     }
 
-    .section-container{
+    .section-container {
         width: 95%;
     }
 
