@@ -1,0 +1,245 @@
+/* CORE STYLING*/
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    color: white;
+    font-family: Montserrat, sans-serif;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    color: white;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    color: white;
+}
+
+li {
+    display: inline;
+}
+
+p {
+    display: block;
+    font-size: 1.1em;
+    line-height: 2;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    color: white;
+    font-family: Montserrat, sans-serif;
+}
+
+/* NAV STYLING */
+header nav {
+    position: fixed;
+}
+
+nav {
+    margin-bottom: 0;
+    background-color: #1f1f1f;
+    z-index: 9999;
+    width: 100%;
+    font-family: Montserrat, sans-serif;
+}
+
+nav a {
+    display: inline-block;
+    padding: 25px 15px;
+}
+
+nav a:hover {
+    background-color: #5f5f5f;
+}
+
+/* SECTION STYLING */
+.section-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    width: 70%;
+}
+
+section {
+    text-align: center;
+    height: 100vh;
+    min-height: 550px;
+}
+
+/* HOME STYLING */
+#home {
+    position: relative;
+}
+
+.about-background-img {
+    background: radial-gradient(circle, transparent 40%, var(--color-v) 75%),
+        linear-gradient(to right, var(--color), var(--color)), var(--image);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: var(--blend-top, normal),
+        var(--blend-bottom, saturation), normal;
+
+    --image: url("../images/max-duzij-qAjJk-un3BI-unsplash.jpg");
+
+    --color-v: black;
+    --color: rgba(255, 255, 255, 0);
+    opacity: 0.5;
+    height: 100%;
+}
+
+.logo-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#logo-img {
+    background-color: #1f1f1f;
+    text-align: center;
+    width: 400px;
+    height: 80px;
+}
+
+#logo-img:hover {
+    opacity: 0.7;
+}
+
+/* LOGO ANIMATION ON LOAD */
+.logo-animate {
+    animation: opac 2s;
+}
+
+@keyframes opac {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* ABOUT */
+#about {}
+
+.profile-img-parent {
+    width: 300px;
+    height: 300px;
+    border-radius: 10rem;
+    margin: auto;
+    overflow: hidden;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/BrandonFabianImage.jpg);
+    transition: transform ease-out 1s;
+}
+
+.profile-img-parent:hover .profile-img,
+.profile-img-parent:focus .profile-img {
+    transform: scale(1.05);
+    transition: all ease-in .3s;
+    opacity: 0.7;
+}
+
+/* PROJECTS */
+#projects {
+    position: relative;
+}
+
+.projects-background-img {
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("../images/markus-spiske-qjnAnF0jIGk-unsplash.jpg");
+    opacity: 0.3;
+    height: 100%;
+}
+
+#projects .section-container {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* CONTACT */
+#contact {
+    height: 90vh;
+}
+
+/* FOOTER */
+footer nav {
+    text-align: center;
+    width: 100%;
+}
+
+footer a {
+    padding: 25px 25px;
+}
+
+@media only screen and (max-width: 640px) {
+    header nav {
+        text-align: center;
+    }
+
+    nav a {
+        padding: 15px 5px;
+    }
+
+    #logo-img {
+        width: 300px;
+        height: 60px;
+    }
+
+    .profile-img-parent {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 850px) and (orientation: landscape) {
+    .logo-center {
+        top: 35%;
+    }
+}
