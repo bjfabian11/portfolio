@@ -250,7 +250,7 @@ input[type=text], select, textarea {
     color: #ffffff;
     padding: 5px 20px 20px;
     max-width: 750px;
-    margin: 20px auto;
+    margin: 20px auto 0;
     text-align: left;
   }
 
