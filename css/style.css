@@ -17,7 +17,7 @@ h1 {
     display: block;
     font-size: 2em;
     margin-top: 0.67em;
-    margin-bottom: 0.67em;
+    margin-bottom: 3em;
     margin-left: 0;
     margin-right: 0;
     font-weight: bold;
@@ -194,9 +194,21 @@ section {
 
 #projects .section-container {
     position: absolute;
-    top: 10%;
+    top: 300px;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.project-img{
+    max-width: 400px;
+    width: 80%;
+    transition: .2s;
+}
+
+.project-img:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
 }
 
 /* CONTACT */
@@ -255,6 +267,10 @@ input[type=text], select, textarea {
   }
 
 /* FOOTER */
+footer{
+    padding-top: 75px;
+}
+
 footer nav {
     text-align: center;
     width: 100%;
