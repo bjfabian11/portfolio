@@ -32,7 +32,7 @@ h3 {
     font-weight: bold;
 }
 
-ul{
+ul {
     margin: 0;
     padding: 0;
 }
@@ -159,11 +159,16 @@ nav a:hover {
     color: black;
 }
 
-.project-img {
+.project-box {
     max-width: 400px;
     width: 80%;
     padding: 20px;
+    display: inline-block;
+}
+
+.project-img {
     transition: ease .4s;
+    width: 100%;
 }
 
 .project-img:hover {
@@ -252,11 +257,11 @@ footer nav {
         padding: 15px 5px;
     }
 
-    footer nav{
-        padding: 30px 25px 75px; 
+    footer nav {
+        padding: 30px 25px 75px;
     }
 
-    h1{
+    h1 {
         padding-bottom: 75px;
     }
 
@@ -274,11 +279,15 @@ footer nav {
         height: 200px;
     }
 
+    .title-text{
+        font-size: 0.9rem;
+    }
+
     .project-img {
         padding: 10px;
     }
 
-    #projects{
+    #projects {
         padding: 75px 5%;
     }
 }
