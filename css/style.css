@@ -10,41 +10,31 @@ a {
 }
 
 body {
-    background-color: black;
+    background-color: #e0e0e0;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    margin: 0;
 }
 
 h1 {
-    display: block;
     font-size: 2em;
-    margin-top: 0.67em;
-    margin-bottom: 3em;
-    margin-left: 0;
-    margin-right: 0;
     font-weight: bold;
-    color: white;
-    font-family: Montserrat, sans-serif;
+    padding-bottom: 100px;
 }
 
 h2 {
-    display: block;
     font-size: 1.5em;
-    margin-top: 0.83em;
-    margin-bottom: 0.83em;
-    margin-left: 0;
-    margin-right: 0;
     font-weight: bold;
-    color: white;
 }
 
 h3 {
-    display: block;
     font-size: 1.17em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
     font-weight: bold;
-    color: white;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
 }
 
 li {
@@ -54,12 +44,9 @@ li {
 p {
     display: block;
     font-size: 1.1em;
+    font-weight: bold;
     line-height: 2;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
-    color: white;
+    padding-top: 50px;
     font-family: Montserrat, sans-serif;
 }
 
@@ -74,6 +61,7 @@ nav {
     z-index: 9999;
     width: 100%;
     font-family: Montserrat, sans-serif;
+    text-align: left;
 }
 
 nav a {
@@ -83,21 +71,6 @@ nav a {
 
 nav a:hover {
     background-color: #5f5f5f;
-}
-
-/* SECTION STYLING */
-.section-container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 0;
-    padding-bottom: 64px;
-    width: 70%;
-}
-
-section {
-    text-align: center;
-    height: 100vh;
-    min-height: 800px;
 }
 
 /* HOME STYLING */
@@ -110,8 +83,8 @@ section {
     background-size: cover;
     background-attachment: fixed;
     background-image: url("../images/max-duzij-qAjJk-un3BI-unsplash.jpg");
-    opacity: 0.5;
-    height: 100%;
+    opacity: 0.95;
+    height: 100vh;
 }
 
 .logo-center {
@@ -148,7 +121,9 @@ section {
 }
 
 /* ABOUT */
-#about {}
+#about {
+    padding: 100px 17%;
+}
 
 .profile-img-parent {
     width: 300px;
@@ -176,87 +151,77 @@ section {
 
 /* PROJECTS */
 #projects {
-    position: relative;
+    background-color: rgb(138, 146, 137);
+    padding: 100px 8%;
 }
 
 #projects h1 {
-    margin-top: 2.5em;
+    color: black;
 }
 
-.projects-background-img {
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-image: url("../images/markus-spiske-qjnAnF0jIGk-unsplash.jpg");
-    opacity: 0.3;
-    height: 100%;
-}
-
-#projects .section-container {
-    position: absolute;
-    top: 300px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.project-img{
+.project-img {
     max-width: 400px;
     width: 80%;
-    transition: .2s;
+    padding: 20px;
+    transition: ease .4s;
 }
 
-.project-img:hover{
-    -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1); /* Safari 3-8 */
-    transform: scale(1.1); 
+.project-img:hover {
+    -ms-transform: scale(1.07);
+    /* IE 9 */
+    -webkit-transform: scale(1.07);
+    /* Safari 3-8 */
+    transform: scale(1.07);
 }
 
 /* CONTACT */
 #contact {
-    height: 90vh;
+    padding: 100px 17%;
 }
 
-input[type=text], select, textarea {
+input[type=text],
+select,
+textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
-    margin-bottom: 16px;
     resize: vertical;
-  }
-  
-  input[type=submit] {
+}
+
+input[type=submit] {
     background-color: #5f5f5f;
     color: white;
-    padding: 12px 30px;
-    margin-right: 30px;
+    padding: 12px 25px;
+    margin: 10px 30px 0 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #1f1f1f;
-  }
+}
 
-  input[type=reset] {
+input[type=submit]:hover {
+    background-color: #1f1f1f;
+}
+
+input[type=reset] {
     background-color: #1f1f1f;
     box-shadow: inset 0px 0px 0 1px #ffffff;
     color: white;
-    padding: 12px 30px;
+    padding: 12px 25px;
+    margin: 10px 30px 0 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  input[type=reset]:hover {
-    background-color:#5f5f5f;
+}
+
+input[type=reset]:hover {
+    background-color: #5f5f5f;
     ;
-  }
-  
-  .contact-form {
+}
+
+.contact-form {
     border-radius: 15px;
     background-color: #1f1f1f;
     color: #ffffff;
@@ -264,20 +229,18 @@ input[type=text], select, textarea {
     max-width: 750px;
     margin: 20px auto 0;
     text-align: left;
-  }
+}
+
+.contact-form p {
+    padding-top: 10px;
+}
 
 /* FOOTER */
-footer{
-    padding-top: 75px;
-}
 
 footer nav {
     text-align: center;
     width: 100%;
-}
-
-footer a {
-    padding: 25px 25px;
+    padding: 50px 25px 100px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -289,16 +252,16 @@ footer a {
         padding: 15px 5px;
     }
 
+    footer nav{
+        padding: 30px 25px 75px; 
+    }
+
+    h1{
+        padding-bottom: 75px;
+    }
+
     p {
         font-size: .9rem;
-    }
-
-    section {
-        min-height: 575px;
-    }
-
-    .section-container {
-        width: 95%;
     }
 
     #logo-img {
@@ -309,6 +272,14 @@ footer a {
     .profile-img-parent {
         width: 200px;
         height: 200px;
+    }
+
+    .project-img {
+        padding: 10px;
+    }
+
+    #projects{
+        padding: 75px 5%;
     }
 }
 

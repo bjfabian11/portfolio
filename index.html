@@ -1,121 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-156881140-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
 
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156881140-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-      gtag("config", "UA-156881140-1");
-    </script>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="favicon.ico" />
-    <title>Brandon Portfolio Site</title>
-  </head>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    gtag("config", "UA-156881140-1");
+  </script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="favicon.ico" />
+  <title>Brandon Portfolio Site</title>
+</head>
 
-    <main>
-      <article>
-        <section id="home">
-          <div class="about-background-img"></div>
-          <div class="logo-animate logo-center">
-            <img id="logo-img" src="images/logo.png" alt="logo" />
-          </div>
-        </section>
+<body>
 
-        <section id="about">
-          <div class="section-container">
-            <h1>ABOUT ME</h1>
-            <div class="profile-img-parent">
-              <div class="profile-img"></div>
-            </div>
-            <p>I love design and photography</p>
-            <p>
-              With a backround in art and photography and a Bachelor's in
-              Computer Science, I found a passion for web design and
-              developement. There is a certain beauty about taking an idea and
-              bringing it to life for all to see.
-            </p>
-          </div>
-        </section>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <section id="projects">
-          <div class="projects-background-img"></div>
-          <div class="section-container">
-            <h1>Projects</h1>
-            <a href="https://bjfabian11.github.io/portfolio-fun/"
-              ><img
-                class="project-img"
-                src="images/portfolio-fun-img.png"
-                alt="project image"
-            /></a>
+  <main>
 
-            <a href="https://yodakod-demo.herokuapp.com/"
-              ><img
-                class="project-img"
-                src="images/yodakod-img.png"
-                alt="project image"
-            /></a>
-          </div>
-        </section>
+    <article>
 
-        <section id="contact">
-          <div class="section-container">
-            <h1>Contact Me</h1>
-            <div class="contact-form">
-              <form
-                enctype="text/plain"
-                method="post"
-                action="mailto:brandonfabian.dev@gmail.com"
-              >
-                <p>First Name:</p>
-                <p><input type="text" name="first_name" /></p>
-                <p>Last Name:</p>
-                <p><input type="text" name="last_name" /></p>
-                <p>Message:</p>
-                <p><textarea rows="5" cols="30" name="message"></textarea></p>
-                <input type="submit" value="Send" />
-                <input type="reset" value="Reset" />
-              </form>
-            </div>
-          </div>
-        </section>
-      </article>
-    </main>
+      <section id="home">
+        <div class="about-background-img"></div>
+        <div class="logo-animate logo-center">
+          <img id="logo-img" src="images/logo.png" alt="logo" />
+        </div>
+      </section>
 
-    <footer>
-      <nav>
-        <ul>
-          <li>
-            <a href="https://www.linkedin.com/in/brandonfabian/">LinkedIn</a>
-          </li>
-          <li><a href="https://github.com/bjfabian11">GitHub</a></li>
-          <li><a>Brandon Fabian © 2020</a></li>
-        </ul>
-      </nav>
-    </footer>
-  </body>
+      <section id="about">
+        <h1>ABOUT ME</h1>
+        <div class="profile-img-parent">
+          <div class="profile-img"></div>
+        </div>
+        <p>I love design and photography</p>
+        <p>
+          With a backround in art and photography and a Bachelor's in
+          Computer Science, I found a passion for web design and
+          developement. There is a certain beauty about taking an idea and
+          bringing it to life for all to see.
+        </p>
+      </section>
+
+      <section id="projects">
+        <h1>Projects</h1>
+        <a href="https://bjfabian11.github.io/portfolio-fun/">
+          <img class="project-img" src="images/portfolio-fun-img.png" alt="project image" />
+        </a>
+        <a href="https://yodakod-demo.herokuapp.com/">
+          <img class="project-img" src="images/yodakod-img.png" alt="project image" />
+        </a>
+        <a href="https://bjfabian11.github.io/landing-page-yodakod/">
+          <img class="project-img" src="images/yodakod-landing-img.png" alt="project image" />
+        </a>
+      </section>
+
+      <section id="contact">
+        <h1>Contact Me</h1>
+        <div class="contact-form">
+          <form enctype="text/plain" method="post" action="mailto:brandonfabian.dev@gmail.com">
+            <p>First Name:</p>
+            <p><input type="text" name="first_name" /></p>
+            <p>Last Name:</p>
+            <p><input type="text" name="last_name" /></p>
+            <p>Message:</p>
+            <p><textarea rows="5" cols="30" name="message"></textarea></p>
+            <input type="submit" value="Send" />
+            <input type="reset" value="Reset" />
+          </form>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <footer>
+    <nav>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/brandonfabian/">LinkedIn</a>
+        </li>
+        <li><a href="https://github.com/bjfabian11">GitHub</a></li>
+        <li><a>Brandon Fabian © 2020</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+
 </html>
